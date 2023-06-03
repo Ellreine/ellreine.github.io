@@ -1,0 +1,18 @@
+.fields {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: calc(450px + 15px);
+	gap: 5px;
+}
+
+.field {
+	display: block;
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+	background-color: rgb(53, 53, 53);
+	/* background: inherit; */
+	border-radius: 5px;
+	color: orange;
+	font-size: 40px;
+}
