@@ -1,2 +1,4 @@
 import figure from '../assets';
-export const XO = (player) => <img src={player === 'X' ? figure.cross : figure.circle} alt="" />;
+export const XO = (player, classes) => (
+	<img className={classes} src={player === 'X' ? figure.cross : figure.circle} alt="" />
+);

@@ -9,7 +9,9 @@ export const AppLayout = ({ props }) => {
 		<div className={styles.wrapper}>
 			<Information props={{ currentPlayer, isGameEnd, isDrow }} />
 			<Field field={field} onClick={handelClick} />
-			<button onClick={handleReset}>Restart Game</button>
+			<button className={styles.reset} onClick={handleReset}>
+				Restart Game
+			</button>
 		</div>
 	);
 };

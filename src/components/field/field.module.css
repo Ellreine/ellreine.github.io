@@ -1,8 +1,8 @@
 .fields {
 	display: flex;
 	flex-wrap: wrap;
-	max-width: calc(450px + 15px);
-	gap: 5px;
+	max-width: calc(450px + 90px);
+	gap: 30px;
 }
 
 .field {
@@ -11,8 +11,13 @@
 	height: 150px;
 	cursor: pointer;
 	background-color: rgb(53, 53, 53);
-	/* background: inherit; */
 	border-radius: 5px;
 	color: orange;
 	font-size: 40px;
+	border: none;
+	transition: 0.5s;
+}
+
+.field:hover {
+	transform: scale(1.1);
 }

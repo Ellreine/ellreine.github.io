@@ -1,10 +1,12 @@
 import React from 'react';
+import { XO } from '../../utils/figure';
+import styles from './information.module.css';
 
 export const InformationLayout = ({ status, currentPlayer }) => {
 	return (
-		<div>
+		<div className={styles.info}>
 			{status}
-			{status !== 'Ничья' && currentPlayer}
+			{status !== 'Ничья' && XO(currentPlayer, styles.image)}
 		</div>
 	);
 };

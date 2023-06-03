@@ -1,7 +1,28 @@
 .wrapper {
+	width: 100vw;
+	height: 100vh;
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
 	gap: 20px;
 	align-items: center;
-	margin-top: 200px;
+	background-color: rgb(41, 41, 41);
+}
+
+.reset {
+	display: block;
+	margin: 0 auto;
+	height: 80px;
+	width: 250px;
+	background-color: rgb(53, 53, 53);
+	color: orange;
+	font-weight: 700;
+	font-size: 30px;
+	cursor: pointer;
+	border: none;
+	transition: 0.5s;
+}
+
+.reset:hover {
+	transform: scale(1.1);
 }
