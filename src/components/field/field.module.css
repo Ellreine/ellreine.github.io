@@ -11,7 +11,7 @@
 	height: 150px;
 	cursor: pointer;
 	background-color: rgb(53, 53, 53);
-	border-radius: 5px;
+	border-radius: 8px;
 	color: orange;
 	font-size: 40px;
 	border: none;
@@ -20,4 +20,12 @@
 
 .field:hover {
 	transform: scale(1.1);
+}
+
+.winningField {
+	background-color: rgb(28, 41, 78);
+}
+
+.opacity {
+	opacity: 0;
 }

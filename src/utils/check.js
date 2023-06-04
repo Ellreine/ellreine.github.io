@@ -4,8 +4,13 @@ export function isDrowF(fields) {
 	return fields.every((f) => f);
 }
 
-export function isWin(fields, currentPlayer) {
-	return WIN_PATTERNS.some((winPattern) =>
-		winPattern.every((index) => fields[index] === currentPlayer),
-	);
+export function isWinF(fields, currentPlayer) {
+	let winIndex = null;
+	const isWin = WIN_PATTERNS.some((winPattern, idx) => {
+		return winPattern.every((index) => {
+			winIndex = idx;
+			return fields[index] === currentPlayer;
+		});
+	});
+	return { winIndex, isWin };
 }

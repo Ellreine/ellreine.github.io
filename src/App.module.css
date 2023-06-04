@@ -4,7 +4,7 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	gap: 20px;
+	gap: 50px;
 	align-items: center;
 	background-color: rgb(41, 41, 41);
 }
@@ -21,6 +21,7 @@
 	cursor: pointer;
 	border: none;
 	transition: 0.5s;
+	border-radius: 8px;
 }
 
 .reset:hover {
