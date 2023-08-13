@@ -1,0 +1,31 @@
+.fields {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: calc(450px + 90px);
+	gap: 30px;
+}
+
+.field {
+	display: block;
+	width: 150px;
+	height: 150px;
+	cursor: pointer;
+	background-color: rgb(53, 53, 53);
+	border-radius: 8px;
+	color: orange;
+	font-size: 40px;
+	border: none;
+	transition: 0.5s;
+}
+
+.field:hover {
+	transform: scale(1.1);
+}
+
+.winningField {
+	background-color: rgb(28, 41, 78);
+}
+
+.opacity {
+	opacity: 0;
+}
